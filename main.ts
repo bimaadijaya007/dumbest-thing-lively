@@ -40,7 +40,7 @@ function main() {
   if (size !== expected) {
     throw new Error(`size check failed: ${size} bytes, expected ${expected}`);
   }
-  console.log(`wrote ${LINE.length} characters to ${outPath}`);
+  console.log(`wrote ${LINE.length} characters (${size} bytes) to ${outPath}`);
   console.log(LINE);
 }
 
